@@ -15,6 +15,9 @@ import android.view.MenuItem;
 
 import com.ckw.multimediaplayer.R;
 
+/**
+ * 主入口
+ */
 public class HomeActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
