@@ -125,6 +125,8 @@ public class HomeActivity extends BaseActivity
 
         } else if (id == R.id.nav_send) {
 
+        }else {
+
         }
 
         mDrawer.closeDrawer(GravityCompat.START);
