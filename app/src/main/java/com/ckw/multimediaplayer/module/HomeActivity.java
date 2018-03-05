@@ -1,5 +1,6 @@
 package com.ckw.multimediaplayer.module;
 
+import android.graphics.Color;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.design.widget.FloatingActionButton;
@@ -24,6 +25,7 @@ import butterknife.BindView;
 public class HomeActivity extends BaseActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
+    public static int themeColor = Color.parseColor("#B24242");
 
     @BindView(R.id.toolbar_id)
     Toolbar mToolbar;
@@ -111,19 +113,13 @@ public class HomeActivity extends BaseActivity
 
         int id = item.getItemId();
 
-        if (id == R.id.nav_camera) {
+        if (id == R.id.nav_home) {//主页
 
-        } else if (id == R.id.nav_gallery) {
+        } else if (id == R.id.nav_manage) {//小工具
 
-        } else if (id == R.id.nav_slideshow) {
+        } else if (id == R.id.nav_setting) {//设置
 
-        } else if (id == R.id.nav_manage) {
-
-        } else if (id == R.id.nav_share) {
-
-        } else if (id == R.id.nav_send) {
-
-        }else {
+        } else {
 
         }
 
