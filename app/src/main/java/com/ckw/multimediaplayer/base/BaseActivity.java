@@ -12,7 +12,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.view.inputmethod.InputMethodManager;
-import android.widget.TextView;
 
 import com.ckw.multimediaplayer.R;
 
@@ -41,7 +40,7 @@ public abstract class BaseActivity extends AppCompatActivity {
 
         if(needToolbar()){
             initToolbar();
-            setToolbar();
+//            setToolbar();
         }
 
         //处理从其他界面传过来的数据
@@ -120,7 +119,8 @@ public abstract class BaseActivity extends AppCompatActivity {
     private void initToolbar(){
         mToolbar =  findViewById(R.id.toolbar_id);
         if(mToolbar != null){
-            mToolbar.setTitle("");
+//            mToolbar.setTitle("");
+            setToolbar();
             setSupportActionBar(mToolbar);
         }
 
